@@ -1,0 +1,131 @@
+.wrapper-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: -20px;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+        -webkit-transform: scaleY(0.5);
+        -moz-transform: scaleY(0.5);
+        -ms-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+
+.wrapper-content:first-child {
+    &::after {
+        display: none;
+    }
+}
+
+.follow-video {
+    padding: 8px 12px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.content-item {
+    position: relative;
+    max-width: 80%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+
+.wrapper-tippy-content {
+    display: flex;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    margin-right: 12px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.account-item {
+    margin-top: 6px;
+}
+
+.content-item-info {
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+}
+
+.nickname {
+    margin-top: 0;
+    margin-right: 4px;
+    font-size: 1.8rem;
+    color: #161823;
+    line-height: 2.2rem;
+}
+
+.check {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 1.4rem;
+    color: #20d5ec;
+}
+
+.name {
+    font-size: 1.4rem;
+    color: #161823bf;
+}
+
+
+.wrapper-video-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-item {
+    height: calc(450px + (100vw - 768px) / 1152 * 100);
+    max-width: 1919px;
+    margin-left: 68px;
+    margin-right: 20px;
+}
+
+.wrapper-interactive {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.icon-interactive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+
+        font-size: 2.1rem;
+}
+
+.title-icon {
+    display: flex;
+    justify-content: center;
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}

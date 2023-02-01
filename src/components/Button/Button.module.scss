@@ -1,0 +1,251 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid transparent;
+
+    + .wrapper {
+        margin-left: 8px;
+    }
+}
+
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
+.code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #161823;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--primary);
+
+    svg {
+        margin-right: 2px;
+    }
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #0075FA;
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #25D366;
+}
+
+.copylink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.add {
+    display: inline-block;
+    padding-left: 115px;
+}
+
+.wrapper:has(.add) {
+    height: 24px;
+}
+
+.twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #1DA1F2;    
+}
+
+.linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #0A66C2;    
+}
+
+.reddit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #FF4500;    
+}
+
+.telegram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #37AEE2;
+
+    svg {
+        margin-right: 2px;
+    } 
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #0DBEF3;    
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #00B900;    
+}
+
+.pinterest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: #E60019;    
+}
+
+
+.rounder {
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    border-color: rgba(22, 24, 35, .12);
+
+    &:hover {
+        border-color: rgba(22, 24, 35, .2);
+        background-color: rgba(22, 24, 35, .06);
+    }
+}
+
+
+//Button types
+.primary {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
+        border-color: var(--primary);
+    }
+}
+
+.outline {
+    color: var(--primary);
+    border-color: currentColor;
+
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.06);
+        border-color: currentColor;
+    }
+}
+
+.custom-login {
+    color: red;
+}
+
+.upload {
+    padding: 9px 16px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 0;
+    &:hover {
+        background-color: rgba(22, 24, 35, .03);
+    }
+}
+
+// Disabled
+
+// Button sizes
+.small {
+    min-width: 88px;
+    padding: 4px 16px;
+}
+
+.large {
+    padding: 14px 16px;
+    min-width: 140px;
+}

@@ -1,0 +1,58 @@
+.wrapper {
+    position: relative;
+    width: 320px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.avatar-tippy {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.buttonTippy {
+    position: absolute;
+    right: 20px;
+}
+
+.item-infoTippy {
+    margin-bottom: 12px;
+}
+
+.nicknameTippy {
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #161823;
+    cursor: pointer;
+}
+
+.check {
+    margin-left: 4px;
+    font-size: 1.4rem;
+    color: #20d5ec;
+}
+
+.nameTippy {
+    font-size: 1.4rem;
+    color: rgb(22, 24, 35);
+    cursor: pointer;
+}
+
+.interactAccount {
+    font-size: 1.7rem;
+    color: #161823bf;
+}
+
+.item-interact {
+    display: inline-block;
+    margin: 0 6px;
+    color: #161823;
+}

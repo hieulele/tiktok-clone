@@ -1,0 +1,41 @@
+.tag-footer {
+    display: flex;
+    box-sizing: border-box;
+    width: fit-content;
+    max-width: 100%;
+    height: 24px;
+    margin-bottom: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(22, 24, 35, 0.2);
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+    transition: background-color 200ms ease-in-out 0s;
+    margin-right: 8px;
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(177, 179, 185, 0.12);
+    }
+}
+
+.hashtag {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 18px;
+}
+
+.text-hashtag {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #161823bf;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 6px;
+}

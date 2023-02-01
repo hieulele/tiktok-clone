@@ -1,0 +1,11 @@
+.footersidebar {
+    display: inline-block;
+    margin: 5px 6px 8px 0;
+    font-size: 1.2rem;
+    line-height: 17px;
+    color: #161823bf;
+
+    &:hover {
+        text-decoration: revert;
+    }
+}
