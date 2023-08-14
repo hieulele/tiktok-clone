@@ -38,7 +38,7 @@ function Search() {
         };
 
         fetchApi();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [debounceValue]);
 
     const handleClear = () => {
@@ -69,7 +69,7 @@ function Search() {
     };
 
     return (
-        // Using a wrapper <div> or <span> tag around the reference element solves 
+        // Using a wrapper <div> or <span> tag around the reference element solves
         //this by creating a new parentNode context.
         <div>
             <HeadlessTippy
@@ -88,6 +88,17 @@ function Search() {
                 onClickOutside={handleHideResult}
             >
                 <div className={cx('search')}>
+                    {searchResult.length > 0 ? (
+                        <Link to={`${config.routes.search}`}>
+                            <button className={cx('search-btn')} onMouseDown={handleSubmit}>
+                                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                            </button>
+                        </Link>
+                    ) : (
+                        <button className={cx('search-btn')} onMouseDown={handleSubmit}>
+                            <FontAwesomeIcon icon={faMagnifyingGlass} />
+                        </button>
+                    )}
                     <input
                         ref={searchFocus}
                         value={searchValue}
@@ -102,17 +113,6 @@ function Search() {
                         </button>
                     )}
                     {loading && <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />}
-                    {searchResult.length > 0 ? (
-                        <Link to={`${config.routes.search}`}>
-                            <button className={cx('search-btn')} onMouseDown={handleSubmit}>
-                                <FontAwesomeIcon icon={faMagnifyingGlass} />
-                            </button>
-                        </Link>
-                    ) : (
-                        <button className={cx('search-btn')} onMouseDown={handleSubmit}>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} />
-                        </button>
-                    )}
                 </div>
             </HeadlessTippy>
         </div>
